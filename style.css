@@ -2,3 +2,97 @@
     margin: 0;
     padding: 0;
 }
+
+header {
+    padding: 10px 0px 10px 20px;
+    border-bottom: 1px solid black;
+}
+
+#addCardsButton {
+    margin-right: 5px;
+}
+
+#mainAsideWrapper {
+    display: flex;
+}
+
+main {
+    flex: 4;
+    overflow-y: scroll;
+}
+
+#numberCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1050px;
+    height: 100vh;
+}
+
+.numberCard {
+    position: relative;
+    margin-top: 30px;
+    width: 47.61904761904761%;
+    height: 300px;
+    border: 1px solid;
+}
+
+.number,
+.closeIcon,
+#instruction {
+    position: absolute;
+}
+
+.closeIcon {
+    top: 10px;
+    right: 10px;
+    width: 20px;
+}
+
+.number {
+    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+aside {
+    position: relative;
+    flex: 1;
+    border-left: 1px solid;
+}
+
+#instruction {
+    font-size: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    border-top: 1px solid;
+}
+
+@media only screen and (max-width: 1280px) {
+    #instruction {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #instruction {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .numberCard {
+        width: 100%;
+    }
+
+    #instruction {
+        font-size: 18px;
+    }
+}
