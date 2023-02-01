@@ -18,7 +18,8 @@ header {
 
 main {
     flex: 4;
-    overflow-y: scroll;
+    max-height: 100vh;
+    overflow-y: auto;
 }
 
 #numberCards {
